@@ -41,6 +41,8 @@ class Dataset:
 
             if self.data[id]['Sampling  Time'] == "1 h":
                 dt = 1*60
+            elif self.data[id]['Sampling  Time'] == "10 min":
+                dt = 10
             else:
                 raise Exception("Nieznany czas próbkowania".format(filename))
 
